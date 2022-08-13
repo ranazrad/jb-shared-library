@@ -1,4 +1,4 @@
-def runCommand(String command){
+def call(String command){
     if (isUnix()) {
         ah command
     }
