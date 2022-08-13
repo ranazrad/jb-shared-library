@@ -1,4 +1,4 @@
-def runCommand(string cmd){
+def runCommand(String cmd){
     if (isUnix()) {
         ah cmd
     }
