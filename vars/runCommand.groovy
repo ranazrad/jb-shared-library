@@ -1,6 +1,6 @@
 def call(String command){
     if (isUnix()) {
-        ah command
+        sh command
     }
     else {
         bat command
