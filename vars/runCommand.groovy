@@ -1,8 +1,8 @@
-def runCommand(String cmd){
+def runCommand(String command){
     if (isUnix()) {
-        ah cmd
+        ah command
     }
     else {
-        bat cmd
+        bat command
     }
 }
