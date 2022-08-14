@@ -1,4 +1,4 @@
-def call(String command){
+def call(String command = "echo hello"){
     script {
         if (isUnix()) {
             sh command
