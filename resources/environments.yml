@@ -10,3 +10,4 @@ stage:
 prod:
   awsCredentials: "awsSlave-prod"
   awsRegion: "us-east-1"
+buildImage: "jpbarto/boto3"
