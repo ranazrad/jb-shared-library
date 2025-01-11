@@ -1,4 +1,4 @@
-def uploadToNexus(Map params) {
+def call(Map params) {
     // Parameters validation
     if (!params.containsKey('nexusUrl') || !params.containsKey('credentialsId') || !params.containsKey('artifactPath')) {
         error "Missing required parameters: nexusUrl, credentialsId, artifactPath"
