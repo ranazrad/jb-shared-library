@@ -29,6 +29,6 @@ def uploadToNexus(Map params) {
             """
         }
 
-        echo "Artifact uploaded successfully to Nexus at ${params.nexusUrl}".
+        echo "Artifact uploaded successfully to Nexus at ${params.nexusUrl}"
     }
 }
