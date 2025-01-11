@@ -9,6 +9,7 @@ def call(Map params) {
         echo "Demo mode enabled. Simulating Docker build and push for '${params.imageName}'."
         def mockDockerFile = 'docker-image-mock.txt'
         writeFile file: mockDockerFile, text: "Mock Docker image '${params.imageName}' created and pushed."
+        archiveArtifacts artifacts: mockDockerFile
     } else {
         withCredentials([usernamePassword(credentialsId: params.credentialsId, usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
             sh """
