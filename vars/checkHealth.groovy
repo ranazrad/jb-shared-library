@@ -8,3 +8,4 @@ def call(Map config = [:]) {
         sh "curl -f -s ${url} > /dev/null"
     }
 }
+//checkHealth(url: 'https://my-app.com/health', maxRetries: 5)
